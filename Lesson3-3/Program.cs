@@ -16,7 +16,7 @@ namespace Lesson3
 
 
 
-        public string[] FileString(string ReadPathUser)
+        public void FileString(string ReadPathUser)
         {
 
             //получаем из файла массив строк
@@ -28,7 +28,7 @@ namespace Lesson3
                 fileLines[i] = MassivMailString;
 
             }
-            return fileLines;
+            File.WriteAllLines(PathSaveMail, fileLines);
         }
         public void SearchMail(ref string MassivMailString)
         {

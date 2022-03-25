@@ -45,7 +45,8 @@ namespace Lesson3
         {
 
             var pathFile = new WorkString();
-            var save = pathFile.FileString(pathFile.ReadPath);
+            pathFile.FileString(pathFile.ReadPath);
+
             Console.ReadLine();
         }
 
